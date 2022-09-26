@@ -163,8 +163,8 @@ p {
   fill: var(--second-color);
 }
 .nav-contact .contact-icon {
-  width: 10px;
-  height: 16px;
+  /* width: 10px;
+  height: 16px; */
   margin-right: 10px;
 }
 /* .contact-icon:hover {
