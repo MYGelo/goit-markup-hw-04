@@ -338,7 +338,7 @@ p {
   box-sizing: content-box;
   border: 1px solid var(--card-border-color);
   border-top: 0;
-  padding: 20px 24px;
+  padding: 19px 23px;
 }
 
 .item img {
@@ -349,9 +349,13 @@ p {
   font-size: 16px;
   line-height: 1.88;
 }
-.portfolio-link:hover,
-.portfolio-link:focus {
-  background-color: rosybrown;
+.portfolio-link h2 {
+  margin-bottom: 4px;
+}
+.portfolio-link-hover:hover,
+.portfolio-link-hover:focus {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 /* about us */
