@@ -6,6 +6,7 @@
   --button-second-backgund: #f5f4fa;
   --hero-bg: #2f303a;
   --header-border-color: #ececec;
+  --primery-grey-color: #afb1b8;
 
   --card-border-color: #eeeeee;
 }
@@ -496,7 +497,7 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: #afb1b8;
+  fill: var(--primery-grey-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -644,10 +645,11 @@ p {
   padding: 16px 32px;
   align-items: center;
   justify-content: center;
-  fill: #afb1b8;
+  fill: var(--primery-grey-color);
 
-  background-color: var(--button-second-backgund);
-  border: 1px solid #afb1b8;
+  background-color: var(--f5f5f5);
+
+  border: 1px solid var(--primery-grey-color);
   border-radius: 4px;
 }
 
