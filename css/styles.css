@@ -96,7 +96,6 @@ p {
 }
 
 /*NAVIGATION*/
-/* .nav-page { */
 
 .nav-main {
   display: flex;
@@ -114,10 +113,6 @@ p {
   border-bottom: 1px solid var(--header-border-color);
 }
 
-/* .nav-studio {
-  margin-left: 93px;
-  line-height: 0;
-} */
 .nav-box {
   display: flex;
   padding-top: 32px;
@@ -284,7 +279,6 @@ p {
 .content-portfolio {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 .portfolio-link h2 {
   color: var(--main-color);
@@ -337,13 +331,7 @@ p {
   background-color: rosybrown;
 }
 
-/* .portfolio-link {
-  
-} */
-
 /* about us */
-/* .about-us {
-} */
 .about-us h2 {
   position: absolute !important;
   color: transparent;
@@ -371,48 +359,25 @@ p {
   font-size: 14px;
   line-height: 1.7;
   font-weight: 400;
-  /* letter-spacing: 0.03em; */
 }
 .section-us .item + .item {
   margin-left: 30px;
 }
-.section-us .item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--button-second-backgund);
-}
-.section-us .item:nth-child(1)::before {
-  background-image: url(../images/aboutus/antenna.png);
-}
-.section-us .item:nth-child(2)::before {
-  background-image: url(../images/aboutus/Vector1.png);
-}
-.section-us .item:nth-child(3)::before {
-  background-image: url(../images/aboutus/Vector2.png);
-}
-.section-us .item:nth-child(4)::before {
-  background-image: url(../images/aboutus/Vector3.png);
-}
-/* .about-us-bgcard {
-  display: inline-flex;
+.section-us-bg {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-
-  margin-bottom: 30px;
 
   height: 120px;
-  width: 270px;
-  border: solid 1px red; 
+  margin-bottom: 30px;
   border-radius: 4px;
-  background-color: var(--button-second-backgund);
-} */
 
+  background-color: var(--button-second-backgund);
+}
+.section-us-bg .svg-us {
+  height: 70px;
+  width: 70px;
+}
 /* What are we doing */
 .wawd {
   text-align: center;
@@ -572,11 +537,28 @@ p {
 .clients-card {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 0;
 }
 .client-item {
+  display: inline-flex;
   width: 170px;
   height: 92px;
 
+  padding: 17px 0;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+
+  /* width: 170px;
+  height: 92px; */
+
   background-color: var(--button-second-backgund);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-item .svg-client {
+  height: 70px;
+  width: 70px;
 }
