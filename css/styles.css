@@ -25,7 +25,15 @@ h6 {
   margin: 0;
   margin-bottom: 10px;
 }
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
 
+  color: var(--main-color);
+}
 ul {
   margin: 0;
 }
@@ -169,8 +177,7 @@ p {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  /* padding-left: 350px;
-  padding-right: 350px; */
+
   background: var(--hero-bg);
 }
 .hero-title {
@@ -189,6 +196,18 @@ p {
 /* .hero-style {
   background: var(--hero-bg);
 } */
+.herobg {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /*Button*/
 .button {
   cursor: pointer;
@@ -357,6 +376,42 @@ p {
 .section-us .item + .item {
   margin-left: 30px;
 }
+.section-us .item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--button-second-backgund);
+}
+.section-us .item:nth-child(1)::before {
+  background-image: url(../images/aboutus/antenna.png);
+}
+.section-us .item:nth-child(2)::before {
+  background-image: url(../images/aboutus/Vector1.png);
+}
+.section-us .item:nth-child(3)::before {
+  background-image: url(../images/aboutus/Vector2.png);
+}
+.section-us .item:nth-child(4)::before {
+  background-image: url(../images/aboutus/Vector3.png);
+}
+/* .about-us-bgcard {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  height: 120px;
+  width: 270px;
+  border: solid 1px red; 
+  border-radius: 4px;
+  background-color: var(--button-second-backgund);
+} */
 
 /* What are we doing */
 .wawd {
@@ -456,13 +511,6 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* .footor-all {
-  /* display: inline-block; */
-/* margin-left: 215px; */
-
-/* .footor .logo {
-  margin-left: 40px;
-} */
 
 /* address*/
 
@@ -514,4 +562,21 @@ p {
 
 .logo-footer {
   margin-bottom: 20px;
+}
+
+/* clients */
+.clients {
+  align-items: center;
+}
+
+.clients-card {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.client-item {
+  width: 170px;
+  height: 92px;
+
+  background-color: var(--button-second-backgund);
 }
