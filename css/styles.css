@@ -125,6 +125,15 @@ p {
 .nav-box .item + .item {
   margin-left: 50px;
 }
+.nav-links {
+  display: inline-flex;
+  margin-left: auto;
+  padding: 0;
+  line-height: 0;
+}
+.nav-links .item + .item {
+  margin-left: 30px;
+}
 .nav-main li {
   list-style: none;
 }
@@ -150,6 +159,7 @@ p {
 
 .nav-contact {
   display: inline-flex;
+  align-items: center;
 
   color: var(--second-color);
 
