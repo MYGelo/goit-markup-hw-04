@@ -149,7 +149,7 @@ p {
 /* contact`s*/
 
 .nav-contact {
-  display: block;
+  display: inline-flex;
 
   color: var(--second-color);
 
@@ -160,10 +160,21 @@ p {
   letter-spacing: 0.02em;
 
   text-decoration: none;
+  fill: var(--second-color);
 }
+.nav-contact .contact-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+/* .contact-icon:hover {
+  
+} */
+
 .nav-contact:hover,
 .nav-contact:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* hero*/
@@ -491,11 +502,14 @@ p {
 
   list-style: none;
 }
-.address a:hover,
-.address a:focus {
+.address-contact:hover,
+.address-contact:focus {
   color: var(--accent-color);
 }
-
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
 .address-footer {
   padding: 0;
   margin-left: auto;
@@ -507,10 +521,6 @@ p {
   font-weight: 400;
 
   list-style: none;
-}
-.address a:hover,
-.address a:focus {
-  color: var(--accent-color);
 }
 
 .address-footer .item + .item {
@@ -545,7 +555,7 @@ p {
   width: 170px;
   height: 92px;
 
-  padding: 17px 0;
+  padding: 16px 32px;
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
@@ -558,7 +568,7 @@ p {
   border-radius: 4px;
 }
 
-.client-item .svg-client {
-  height: 70px;
-  width: 70px;
+.client-item:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
