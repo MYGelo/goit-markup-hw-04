@@ -216,6 +216,7 @@ p {
 } */
 .herobg {
   max-width: 1600px;
+  width: 100%;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -514,7 +515,8 @@ p {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
-.social-links-us:hover {
+.social-links-us:hover,
+.social-links-us:focus {
   fill: var(--primery-white-color);
   background-color: var(--accent-color);
 }
