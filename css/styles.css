@@ -9,6 +9,7 @@
   --primery-grey-color: #afb1b8;
 
   --card-border-color: #eeeeee;
+  --hero-bg-hover: #188ce8;
 }
 body {
   color: var(--main-color);
@@ -283,8 +284,8 @@ p {
 }
 .herobt:hover,
 .herobt:focus {
-  color: var(--primery-white-color);
-  background-color: var(--second-color);
+  background: var(--hero-bg-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* portfolio */
 .section-portfolio {
