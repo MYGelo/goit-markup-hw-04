@@ -279,6 +279,12 @@ p {
 
   color: var(--primery-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.herobt:hover,
+.herobt:focus {
+  color: var(--primery-white-color);
+  background-color: var(--second-color);
 }
 /* portfolio */
 .section-portfolio {
