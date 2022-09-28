@@ -496,6 +496,7 @@ p {
 }
 
 .usteam-cardtext {
+  background-color: var(--primery-white-color);
   padding: 30px 10px;
 }
 
@@ -666,7 +667,8 @@ p {
   border-radius: 4px;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
